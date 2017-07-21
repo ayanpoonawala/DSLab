@@ -3,15 +3,13 @@
 
 int stack[MAX_SIZE],top=-1;
 int isFull(){
-//returns 1 if stack is full else returns -1
 	if(top==MAX_SIZE-1)
 		return 1;
-	else 
+	else
 		return -1;
 }
 
-int isEmpty(){
-//returns 1 if stack is empty else returns -1
+int isEmpty()
 	if(top==-1)
 		return 1;
 	else
@@ -20,7 +18,7 @@ int isEmpty(){
 
 int peek(){
 	return stack[top];
-//return element at the top of stack
+
 }
 
 void  push(int e){
@@ -33,11 +31,11 @@ void  push(int e){
 	else{
 		printf("Stack overflow\n");
 	}
-//inserts an element into stack
+
 }
 
 void pop(){
-//deletes an element from top of stack
+
 	int d;
 	if(!isEmpty)
 	{
